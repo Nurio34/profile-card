@@ -1,0 +1,64 @@
+@import 'conf';
+@import 'reset';
+
+body{
+
+    picture{
+        img:not(section picture img){
+            position: absolute;
+        }
+        img:nth-of-type(1):not(section picture img){
+            top:0;
+            left:0;
+            transform: translate(-5%,-40%);
+        }
+        img:nth-of-type(2){
+            transform: translate(15%,0%);
+        }
+    }
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1.3fr 0.7fr;
+    border-radius: 1rem;
+    background-color: white;
+    z-index: 1;
+
+    header{
+        img{
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+
+    section{
+        position: relative;
+
+        picture{
+            position: absolute;
+            top:0;
+            left:50%;
+            transform: translate(-50%,-50%);
+            
+            img{
+                border-radius: 50%;
+                border: 0.5rem solid white;
+
+            }
+        }
+
+        h1{
+            margin-top:3rem;
+        }
+    }
+
+    footer{
+        border-top:1px solid $Dark-gray;
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+
+@import 'media';

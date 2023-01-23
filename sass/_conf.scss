@@ -1,0 +1,40 @@
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+
+$Font-size-name-and-stats: 18px;
+$font-size-200:13px;
+$font-size-300:16px;
+
+$font-weight-400:400;
+
+$font-family: 'Kumbh Sans', sans-serif;
+
+$width : min(350px,100%);
+
+$txt-align-cntr : center;
+
+    // UTILITY CLASSES //
+
+.bg-clr-100{background-color: $Dark-cyan;}
+
+.fs-100{font-size: $Font-size-name-and-stats;}
+.fs-200{font-size: $font-size-200;}
+.fs-300{font-size: $font-size-300;}
+
+.fw-400{font-weight: 400;}
+
+.ff-100{font-family: $font-family;}
+
+.w-100{width: $width;}
+
+.txt-algn-cntr{text-align: $txt-align-cntr;}
+
+.clr-100{color:$Very-dark-desaturated-blue}
+.clr-200{color:$Dark-grayish-blue}
+.clr-300{color:$Dark-gray}
+
+.flx-cntr-cntr{display:flex;justify-content:center;align-items:center}
+.flx-spev-cntr{display:flex;justify-content:space-evenly;align-items:center}
+.flx-clmn-cntr-cntr{display:flex;flex-direction:column;justify-content:center;align-items:center}
